@@ -3,5 +3,16 @@
   "include": ["src", "types"],
   "compilerOptions": {
     "module": "esnext",
+    "baseUrl": ".",
+    "paths": {
+        "models/*": ["src/models/*"],
+        "@obbo/*": ["src/dummy/obbo/*"]
+    },
+    "plugins": [
+      {
+        "transform": "@zerollup/ts-transform-paths",
+        "exclude": ["*"]
+      }
+    ]
   }
 }
