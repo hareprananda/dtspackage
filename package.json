@@ -16,7 +16,10 @@
     "prepare": "dts build",
     "size": "size-limit",
     "start": "dts watch",
-    "test": "dts test"
+    "test": "dts test",
+    "clean": "rm -rf dist",
+    "buildpackage": "cd dist && npm pack",
+    "prebuildpackage": "npm run clean && npm run compile && ts-node src/SetupPackage.ts"
   },
   "husky": {
     "hooks": {
