@@ -1,4 +1,5 @@
 src
 *.map
+*.development.*
 SetupPackage.*
 version.txt

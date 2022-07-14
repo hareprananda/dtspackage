@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "Hare Prananda",
   "main": "dist/index.js",
-  "module": "dist/dtspackage.esm.js",
+  "module": "dist/hprananda-dtspackage.esm.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "analyze": "size-limit --why",

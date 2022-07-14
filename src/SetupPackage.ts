@@ -23,6 +23,11 @@ function main() {
   );
 
   fs.copyFileSync(path.resolve('.npmignore'), path.resolve('dist/.npmignore'));
+  fs.unlinkSync(path.resolve('dist/index.js'));
+  fs.renameSync(
+    path.resolve(`dist/${sourceObj.name}.cjs.production.min.js`),
+    path.resolve('dist/index.js')
+  );
 }
 
 main();
