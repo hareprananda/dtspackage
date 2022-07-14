@@ -26,7 +26,7 @@ function main() {
     Buffer.from(sourceObj.version, 'utf-8')
   );
 
-  fs.copyFileSync(path.resolve('.npmignore'), path.resolve('dist/npmignore'));
+  fs.copyFileSync(path.resolve('.npmignore'), path.resolve('dist/.npmignore'));
 }
 
 main();
