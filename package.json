@@ -6,9 +6,6 @@
   "main": "dist/index.js",
   "module": "dist/dtspackage.esm.js",
   "typings": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "analyze": "size-limit --why",
     "build": "dts build",

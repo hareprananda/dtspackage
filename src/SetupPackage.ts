@@ -1,10 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-// DO NOT DELETE THIS FILE
-// This file is used by build system to build a clean npm package with the compiled js files in the root of the package.
-// It will not be included in the npm package.
-
 function main() {
   const source = fs
     .readFileSync(path.resolve('package.json'))
@@ -29,4 +25,9 @@ function main() {
   fs.copyFileSync(path.resolve('.npmignore'), path.resolve('dist/.npmignore'));
 }
 
-main();
+const checkDirectory = () => {
+  const folders = fs.readdirSync(path.resolve('dist'));
+  console.log(folders);
+};
+
+checkDirectory();
