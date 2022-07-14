@@ -6,7 +6,8 @@
     "baseUrl": ".",
     "paths": {
         "models/*": ["src/models/*"],
-        "@obbo/*": ["src/dummy/obbo/*"]
+        "@obbo/*": ["src/dummy/obbo/*"],
+        "@ofb/*": ["src/dummy/ofb/*"]
     },
     "plugins": [
       {
