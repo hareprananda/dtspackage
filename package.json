@@ -1,6 +1,6 @@
 {
   "name": "hprananda-dtspackage",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "author": "Hare Prananda",
   "main": "dist/index.js",
@@ -19,7 +19,7 @@
     "test": "dts test",
     "clean": "rm -rf dist",
     "buildpackage": "cd dist && npm pack",
-    "prebuildpackage": "npm run clean && npm run compile && ts-node src/SetupPackage.ts"
+    "prebuildpackage": "npm run clean  && ts-node src/SetupPackage.ts"
   },
   "husky": {
     "hooks": {
