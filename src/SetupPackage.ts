@@ -25,9 +25,4 @@ function main() {
   fs.copyFileSync(path.resolve('.npmignore'), path.resolve('dist/.npmignore'));
 }
 
-const checkDirectory = () => {
-  const folders = fs.readdirSync(path.resolve('dist'));
-  console.log(folders);
-};
-
-checkDirectory();
+main();
